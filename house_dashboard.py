@@ -161,7 +161,6 @@ def plot_hist_house(df_house):
 
 def generate_ui(df_house, geofile_areas):
 
-
     st.title('Data Overview')
     # generate filter side bar
     st.sidebar.title('Source Data')
@@ -173,10 +172,10 @@ def generate_ui(df_house, geofile_areas):
             intended to exercise knowledge in both storytelling and data science.
 
              You can also use our Python code in a scripting environment or query our database directly. Details are at our 
-             [GitHub](https://github.com/giovaneMiranda). If you find bugs, please reach out or create an issue on our 
+             [GitHub](https://github.com/giovaneMiranda/dashboard_house_rocket). If you find bugs, please reach out or create an issue on our 
              GitHub repository. 
 
-            More documentation and contribution details are at our [GitHub Repository](https://github.com/giovaneMiranda).
+            More documentation and contribution details are at our [GitHub Repository](https://github.com/giovaneMiranda/dashboard_house_rocket).
             """)
 
     with st.sidebar.beta_expander("Credits"):
@@ -187,7 +186,7 @@ def generate_ui(df_house, geofile_areas):
         The analysis and underlying data are provided as open source [Kaggle](https://www.kaggle.com/harlfoxem/housesalesprediction). 
             """
 
-    checkbox_df = st.checkbox('Show Sorce Data', value=False)
+    checkbox_df = st.checkbox('Show Source Data', value=False)
 
     # Show source data
     if checkbox_df:
